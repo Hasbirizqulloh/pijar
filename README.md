@@ -1,6 +1,6 @@
 # 💡 Pijar - Sistem Pembaca Gambar untuk Tunanetra
 
-[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/[NAMA-ANDA]/[NAMA-SPACE-ANDA])
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hasbiiii/pijar-app)
 
 Repositori ini berisi kode sumber untuk proyek Capstone "Pijar", sebuah sistem berbasis web yang dirancang untuk membantu mobilitas mandiri penyandang tunanetra dengan menerjemahkan informasi visual dari lingkungan sekitar menjadi narasi suara.
 
@@ -14,9 +14,7 @@ Pijar mengatasi masalah ini dengan memungkinkan pengguna mengunggah gambar lingk
 
 Anda bisa mencoba aplikasi Pijar secara langsung melalui link Hugging Face Spaces berikut:
 
-**[➡️ Klik di sini untuk mencoba demo aplikasi](https://huggingface.co/spaces/[NAMA-ANDA]/[NAMA-SPACE-ANDA])**
-
-*(Harap ganti `[NAMA-ANDA]` dan `[NAMA-SPACE-ANDA]` dengan URL Space Anda yang sebenarnya)*
+**[➡️ Klik di sini untuk mencoba demo aplikasi](https://huggingface.co/spaces/hasbiiii/pijar-app)**
 
 ## Fitur Utama
 
@@ -37,7 +35,6 @@ Anda bisa mencoba aplikasi Pijar secara langsung melalui link Hugging Face Space
 -   **Platform Deployment**: Hugging Face Spaces
 -   **Manajemen File Besar**: Git LFS
 
-## Struktur Proyek
 
 ## ## Menjalankan Proyek Secara Lokal
 
@@ -46,33 +43,40 @@ Jika Anda ingin menjalankan proyek ini di komputer Anda sendiri, ikuti langkah-l
 1.  **Clone Repository**
     Pastikan Anda sudah menginstal Git dan Git LFS.
     ```bash
-    # Clone repository dari Hugging Face Spaces
-    git clone [https://huggingface.co/spaces/](https://huggingface.co/spaces/)[NAMA-ANDA]/[NAMA-SPACE-ANDA]
+    # Clone repository dari github
+    git clone https://github.com/Hasbirizqulloh/pijar.git
+    ```
+2. **Unduh Model**    
+    Model CNN
+   ```bash
+    https://drive.google.com/file/d/1CDCki-yNoRNK1OOrHPoM8rKDkBw82cWg/view?usp=sharing
+    ```
+   Model GPT-2
+    ```bash
+    https://drive.google.com/drive/folders/1z22baBDyYZIo2ciyiE8ntm0_KXIwuCw1?usp=sharing
     ```
 
-2.  **Masuk ke Direktori Proyek**
+3.  **Masuk ke Direktori Proyek**
     ```bash
-    cd [NAMA-SPACE-ANDA]
-    ```
-
-3.  **Unduh File Model (Git LFS)**
-    Perintah ini akan mengunduh file-file besar seperti `.keras` dan `.bin` yang dilacak oleh LFS.
-    ```bash
-    git lfs pull
+    cd inference
     ```
 
 4.  **Install Dependensi**
     Disarankan untuk menggunakan virtual environment.
     ```bash
-    # Buat virtual environment (opsional tapi direkomendasikan)
+    # Buat virtual environment 
     python -m venv venv
     source venv/bin/activate  # Di Windows: venv\Scripts\activate
 
     # Install semua library yang dibutuhkan
     pip install -r requirements.txt
     ```
+5. **Struktur Proyek**    
+    Buat struktur proyek seperti ini
 
-5.  **Jalankan Aplikasi**
+   ![image](https://github.com/user-attachments/assets/4dc14ea8-d5a5-4aa2-81bf-752adc67b701)
+   
+6.  **Jalankan Aplikasi**
     ```bash
     python app.py
     ```
